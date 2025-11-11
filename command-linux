@@ -116,5 +116,6 @@ others,r--,4 (r=4)
 Permission Setting Methods
 numerical method: chmod 777 file1
 
-alphabetical (The image is cut off here, but this refers to symbolic methods like chmod u+x file1)
+alphabetical (chmod u+x file1)
+chmod u=rw,g=rx,o=rwx file1
 
