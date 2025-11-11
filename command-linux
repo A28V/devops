@@ -15,3 +15,39 @@ fdisk -l               : to show the volume information
 lsblk                  : to show the volume information
 
 ifconfig / ip addr / ip addr show / hostname -i : to show ip address
+clear(ctrl + l)        : to clear screen
+
+
+FILE COMMANDS:
+
+touch file              : to create a file
+ls -l                   : to show list of files
+
+cat file1               : to show the content
+cat >> file1            : to insert the content (append mode)
+enter ctrl + d          : to save and exit after insert
+
+cp file1 file2          : copies the content from file1 to file2
+mv file1 file2          : to rename or move file1 to file2
+
+rm file1                : to remove a file
+rm file1 -f             : to remove a file forcefully
+rm * -f                 : to remove all files forcefully
+
+touch file{1..100}      : to create 100 files at a time
+
+cat file1 >> file2      : to copy content from file1 to file2 (without overwriting)
+====================================================================================
+
+top                          : show running processes
+htop                         : advanced process viewer
+htop install command         : yum install htop -y
+head file1                   : shows first 10 lines of a file
+head -5 file1                : shows first 5 lines
+head -15 file1               : shows first 15 lines
+tail file1                   : shows bottom 10 lines
+tail -5 file1                : shows bottom 5 lines
+tail -15 file1               : shows bottom 15 lines
+sed -n '5,15p' file1         : to print line 5 to 15
+wc file1                     : to show lines, words, and characters
+=======================================================================================
