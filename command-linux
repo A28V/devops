@@ -51,3 +51,70 @@ tail -15 file1               : shows bottom 15 lines
 sed -n '5,15p' file1         : to print line 5 to 15
 wc file1                     : to show lines, words, and characters
 =======================================================================================
+
+Editor
+
+1. VIM / vi
+2. nano
+>> VIM BASIC COMMMAND :
+
+i        : to insert content
+esc      : to exit insert mode and go to command mode
+
+Modes:
+----------------------
+1. command mode
+------------------------------
+Command,Action
+gg,top of file
+shift g (or G),bottom of file
+:set number,to show number of lines inside file
+:n,to go to specific line (where n is the line number)
+yy,to copy a line
+10yy,to copy 10 lines
+p,to paste
+5pp,to paste 5 times
+dd,to delete a line
+10dd,to delete 10 lines
+u,undo
+ctrl r,redo
+/word,to search for a word
+-----------------------------------
+2. insert mode
+------------------------------------
+Command,Action
+i,to insert command (starting insertion at the cursor's current position)
+A,end of line (append)
+I,starting of line (insert)
+O,create new line above existing
+o,to create new line below existing
+---------------------------
+3. save mode
+--------------------------
+Command,Action
+:w,to save
+:q,to quit
+:wq,save and quit
+:wq!,save and quit forcefully
+======================================================
+
+
+Linux Permissions (chmod)
+-----------------------------
+Permission,Symbolic Value,Numerical Value
+read,r,4
+write,w,2
+executable,x,1
+----------------------------------------------------------------------------------------------
+File Owner Permissions
+----------------------------------------------------------------------------------------------
+Owner Category,Symbolic Permissions,Numerical Value
+user,rw-,6 (r=4 + w=2)
+group,r--,4 (r=4)
+others,r--,4 (r=4)
+-------------------------------------------------------------------------------------------------
+Permission Setting Methods
+numerical method: chmod 777 file1
+
+alphabetical (The image is cut off here, but this refers to symbolic methods like chmod u+x file1)
+
